@@ -2,15 +2,15 @@
     height: calc(100vh - 80px);
     padding: 20px;
     margin: 20px;
-    background: lavender;
+    border-bottom: 2px solid darkgray;
 }
 
 .header {
+    text-align: center;
     margin-top: 10px;
-    font-size: 22px;
+    font-size: 40px;
     font-weight: 600;
-    color: darkcyan;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     font-family: Georgia, serif;
 }
 
@@ -19,6 +19,7 @@
     justify-content: space-between;
     font-size: 18px;
     align-items: center;
+
 }
 
 .participants, .winner {
@@ -32,4 +33,6 @@
 
 .button {
     height: 40px;
+    background: transparent;
+    border-radius: 5px;
 }
