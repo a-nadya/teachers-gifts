@@ -1,5 +1,9 @@
+:root {
+    --height: calc(100vh - 80px);
+}
+
 .root {
-    height: calc(100vh - 80px);
+    height: var(--height);
     padding: 20px;
     margin: 20px;
     border-bottom: 2px solid darkgray;
@@ -10,7 +14,7 @@
     margin-top: 10px;
     font-size: 40px;
     font-weight: 600;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     font-family: Georgia, serif;
 }
 
@@ -26,6 +30,13 @@
     flex: 1;
 }
 
+.participants {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: calc(var(--height) - 80px);
+}
+
 .winner {
     text-align: center;
     font-weight: bolder;
@@ -35,4 +46,5 @@
     height: 40px;
     background: transparent;
     border-radius: 5px;
+    cursor: pointer;
 }
