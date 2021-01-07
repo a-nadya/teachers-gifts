@@ -1,0 +1,35 @@
+.root {
+    height: calc(100vh - 80px);
+    padding: 20px;
+    margin: 20px;
+    background: lavender;
+}
+
+.header {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    color: darkcyan;
+    margin-bottom: 15px;
+    font-family: Georgia, serif;
+}
+
+.body {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    align-items: center;
+}
+
+.participants, .winner {
+    flex: 1;
+}
+
+.winner {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.button {
+    height: 40px;
+}
