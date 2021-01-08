@@ -10,9 +10,11 @@ const App = () => {
   const selectWinner = (nomination) => {
     const nominationParticipants = Participants[nomination];
     let winnerApplicant = null;
+    
     do {
       winnerApplicant = getWinnerApplicant(nominationParticipants);
     } while (winners.some(w => w === winnerApplicant));
+
     setWinners([...winners, winnerApplicant]);
     return winnerApplicant;
   };

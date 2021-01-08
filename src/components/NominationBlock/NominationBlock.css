@@ -23,18 +23,17 @@
     justify-content: space-between;
     font-size: 18px;
     align-items: center;
-
 }
 
 .participants, .winner {
     flex: 1;
+    height: calc(var(--height) - 80px);
 }
 
 .participants {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: calc(var(--height) - 80px);
 }
 
 .winner {
