@@ -22,7 +22,6 @@
     display: flex;
     justify-content: space-between;
     font-size: 18px;
-    align-items: center;
 }
 
 .participants, .winner {
