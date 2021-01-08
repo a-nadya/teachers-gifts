@@ -10,10 +10,12 @@ const App = () => {
   const selectWinner = (nomination) => {
     const nominationParticipants = Participants[nomination];
     let winnerApplicant = null;
-    
+
+    let tryCount = 0;
     do {
       winnerApplicant = getWinnerApplicant(nominationParticipants);
-    } while (winners.some(w => w === winnerApplicant));
+      tryCount ++;
+    } while (winners.some(w => w === winnerApplicant) && tryCount < 50);
 
     setWinners([...winners, winnerApplicant]);
     return winnerApplicant;
